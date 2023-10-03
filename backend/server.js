@@ -1,1 +1,7 @@
-console.log("Hola mundo")
+const express = require("express")
+const dotenv = require("dotenv")
+const port = 5000
+
+const app = express()
+
+app.listen(port, ()=> console.log(`Servidor inicializado en el puerto ${port}`))
